@@ -49,6 +49,18 @@ namespace RAA_Session_07_Skills
                 }
             }
 
+            // read from the text file
+
+            if(File.Exists(txtFile))
+            {
+                string[] textFile = File.ReadAllLines(txtFile);
+
+                foreach (string text in textFile)
+                {
+                    Debug.Print(text);
+                }
+            }
+
             return Result.Succeeded;
         }
     }
