@@ -49,15 +49,30 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Command.cs" />
+    <Compile Include="frmTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTestForm.Designer.cs">
+      <DependentUpon>frmTestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="RAA_Session 07_Skills.addin" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmTestForm.resx">
+      <DependentUpon>frmTestForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
