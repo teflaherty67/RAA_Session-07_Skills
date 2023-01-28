@@ -53,6 +53,7 @@
             this.lbxText.Name = "lbxText";
             this.lbxText.Size = new System.Drawing.Size(262, 376);
             this.lbxText.TabIndex = 1;
+            this.lbxText.DoubleClick += new System.EventHandler(this.lbxText_DoubleClick);
             // 
             // btnButton1
             // 
@@ -62,6 +63,7 @@
             this.btnButton1.TabIndex = 2;
             this.btnButton1.Text = "Do Something";
             this.btnButton1.UseVisualStyleBackColor = true;
+            this.btnButton1.Click += new System.EventHandler(this.btnButton1_Click);
             // 
             // btnButton2
             // 
@@ -71,6 +73,7 @@
             this.btnButton2.TabIndex = 3;
             this.btnButton2.Text = "Do Something 2";
             this.btnButton2.UseVisualStyleBackColor = true;
+            this.btnButton2.Click += new System.EventHandler(this.btnButton2_Click);
             // 
             // btnButton3
             // 
@@ -80,6 +83,7 @@
             this.btnButton3.TabIndex = 4;
             this.btnButton3.Text = "Do Something 3";
             this.btnButton3.UseVisualStyleBackColor = true;
+            this.btnButton3.Click += new System.EventHandler(this.btnButton3_Click);
             // 
             // tbxTextBox
             // 

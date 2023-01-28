@@ -61,6 +61,9 @@ namespace RAA_Session_07_Skills
                 }
             }
 
+            frmTestForm form1 = new frmTestForm();
+            form1.Show();
+
             return Result.Succeeded;
         }
     }
