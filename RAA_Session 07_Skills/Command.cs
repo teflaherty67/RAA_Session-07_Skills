@@ -26,10 +26,28 @@ namespace RAA_Session_07_Skills
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
+            // get & set the file paths for Revit model & text file
+
             string modelPath = doc.PathName;
             string fileName = Path.GetFileName(modelPath);
             string fileName2 = Path.GetFileNameWithoutExtension(fileName);
             string folderPath = Path.GetDirectoryName(modelPath);
+            string txtFile = folderPath + "\\" + fileName2 + ".txt";
+
+            // create & write to the text file
+
+            List<string> stringList = new List<string>();
+            stringList.Add("Line 1");
+            stringList.Add("Line 2");
+            stringList.Add("Line 3");
+
+            using(StreamWriter writer = File.CreateText(txtFile))
+            {
+                foreach(string curLine in stringList)
+                {
+                    writer.WriteLine(curLine);
+                }
+            }
 
             return Result.Succeeded;
         }
