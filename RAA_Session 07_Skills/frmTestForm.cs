@@ -13,9 +13,19 @@ namespace RAA_Session_07_Skills
 {
     public partial class frmTestForm : Form
     {
-        public frmTestForm()
+        BindingList<TestData> dataList = new BindingList<TestData>();
+        public frmTestForm(string filepath)
         {
+            TestData data1 = new TestData("a", "b", 1);
+            TestData data2 = new TestData("c", "d", 2);
+
+            dataList.Add(data1);
+            dataList.Add(data2);
+
             InitializeComponent();
+
+            lbxText.DataSource = dataList;
+            lbxText.DisplayMember = "Combo";
         }
 
         private void btnButton1_Click(object sender, EventArgs e)
@@ -39,3 +49,4 @@ namespace RAA_Session_07_Skills
         }
     }
 }
+ 

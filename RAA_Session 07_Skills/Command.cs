@@ -61,8 +61,12 @@ namespace RAA_Session_07_Skills
                 }
             }
 
-            frmTestForm form1 = new frmTestForm();
+            frmTestForm form1 = new frmTestForm(txtFile);
             form1.ShowDialog();
+
+            //TestData test1 = new TestData("this is a string", "this is another string", 10);
+
+            //TaskDialog.Show("test", test1.Combo);
 
             return Result.Succeeded;
         }

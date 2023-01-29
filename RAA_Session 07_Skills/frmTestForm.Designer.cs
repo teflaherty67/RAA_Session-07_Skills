@@ -105,7 +105,7 @@
             this.Controls.Add(this.lbxText);
             this.Controls.Add(this.lblLabel1);
             this.Name = "frmTestForm";
-            this.Text = " This is a test form";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
